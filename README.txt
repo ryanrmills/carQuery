@@ -1,11 +1,6 @@
-SDEV117 Final Project
+SDEV117 Final Project: Car Query
+by Ryan Mills and Ahmed
+Date: 11/30/2024
 
-- Querying from car.json file
-  - Car brand is a text input filter
-  - Fuel type is dropdown selection
-    - Gasoline
-    - Diesel
-    - E85
-  - Horsepower
-  - Fuel economy
-  - driveline (AWD, RWD, FWD, 4WD)
+
+

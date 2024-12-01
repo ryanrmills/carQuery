@@ -16,11 +16,8 @@ main {
 
   display: flex;
   flex-direction: column;
-  /* justify-content: center; */
   align-items: center;
   
-
-  /* background-image: linear-gradient(to right, #000000, #14213D); */
   background-color: #ffdba4;
   color: rgb(80, 80, 80);
 }
@@ -33,7 +30,6 @@ section {
   border-radius: 10px;
 
   display: flex;
-  /* align-items: center; */
   
   background-color: #335C67;
 
