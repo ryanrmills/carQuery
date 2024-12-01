@@ -13,28 +13,32 @@
 </head>
 <body>
   <main>
-    <h1>Car Query</h1>
+    <h1 style="margin: 0px; margin-top: 2vh;">Car Query</h1>
+    <img src="./assets/car.png" style="width: 5vw;"></img>
     <section>
       <div class="form-div">
         <label>
-          Car make:<br>
+          Car make:
           <input type="text" id="car-make-input">
+          <span class="car-make-err" id="car-make-err">Please enter a car make</span>
         </label>
 
-        <label>
+        <!-- <label>
           Fuel type:<br>
           <label><input type="radio" name="fuel-type" value="Gasoline">Gas</label>
           <label><input type="radio" name="fuel-type" value="Diesel fuel">Diesel</label>
           <label><input type="radio" name="fuel-type" value="E85">E85</label>
-        </label>
+        </label> -->
 
+        
         <label>
-          MPG(highway):<br>
-          <input type="text" min="5" max="100" value="25" id="fuel-economy">
+          Fuel economy (mpg):
+          <input placeholder="35" type="text" min="5" max="100" value="25" id="fuel-economy">
         </label>
-
+        <span class="fuel-eco-err" id="fuel-eco-err">Please enter a number</span>
+        
         <label>
-          Driveline:<br>
+          Driveline:
           <select id="driveline">
             <option value="none">Choose a driveline</option>
             <option value="All-wheel drive">AWD</option>
@@ -42,14 +46,32 @@
             <option value="Rear-wheel drive">RWD</option>
             <option value="Front-wheel drive">FWD</option>
           </select>
-
         </label>
-        <label>
+        <span class="driveline-err" id="driveline-err">Please choose a driveline selection</span>
+        <!-- <label>
           Transmission:<br>
           <label><input type="radio" name="transmission" value="Manual transmission">Manual</label>
           <label><input type="radio" name="transmission" value="Automatic transmission">Automatic</label>
+        </label> -->
+        
+        <label>
+          Fuel type:<br>
+          <img name="fuelType" src="./assets/gas2.png" class="fuel-type-2" alt="Gasoline">
+          <img name="fuelType" src="./assets/diesel.png" class="fuel-type-2" alt="Diesel fuel">
+          <img name="fuelType" src="./assets/e85.png" class="fuel-type-2" alt="E85">
         </label>
-        <button class="submitBtn" id="submit-btn">Submit</button>
+        <span class="fuel-type-err" id="fuel-type-err">Please choose a fuel type.</span>
+
+        <label>
+          Transmission:<br>
+          <img name="transmission2" src="./assets/manual.png" alt="Manual transmission" class="trans2">
+          <img name="transmission2" src="./assets/automatic.png" alt="Manual transmission" class="trans2">
+        </label>
+        <span class="trans2-err" id="trans2-err">Please choose a transmission type.</span>
+
+        <div class="button-container">
+          <button class="submitBtn" id="submit-btn">Submit</button>
+        </div>
       </div>
       <div id="output" class="output-div">
         
