@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Car Query</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Permanent+Marker&display=swap" rel="stylesheet">
+  <script src="//code.jquery.com/jquery.js"></script>
+  <script src="script.js" defer></script>
+  <link href="index.css" rel="stylesheet">
+</head>
+<body>
+  <main>
+    <h1>Car Query</h1>
+    <section>
+      <div class="form-div">
+        <label>
+          Car make:<br>
+          <input type="text" id="car-make-input">
+        </label>
+
+        <label>
+          Fuel type:<br>
+          <label><input type="radio" name="fuel-type" value="Gasoline">Gas</label>
+          <label><input type="radio" name="fuel-type" value="Diesel fuel">Diesel</label>
+          <label><input type="radio" name="fuel-type" value="E85">E85</label>
+        </label>
+
+        <label>
+          MPG(highway):<br>
+          <input type="text" min="5" max="100" value="25" id="fuel-economy">
+        </label>
+
+        <label>
+          Driveline:<br>
+          <select id="driveline">
+            <option value="none">Choose a driveline</option>
+            <option value="All-wheel drive">AWD</option>
+            <option value="Four-wheel drive">4WD</option>
+            <option value="Rear-wheel drive">RWD</option>
+            <option value="Front-wheel drive">FWD</option>
+          </select>
+
+        </label>
+        <label>
+          Transmission:<br>
+          <label><input type="radio" name="transmission" value="Manual transmission">Manual</label>
+          <label><input type="radio" name="transmission" value="Automatic transmission">Automatic</label>
+        </label>
+        <button class="submitBtn" id="submit-btn">Submit</button>
+      </div>
+      <div id="output" class="output-div">
+        
+      </div>
+    </section>
+   
+  </main>
+</body>
+</html>
